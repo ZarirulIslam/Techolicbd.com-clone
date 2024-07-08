@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole Body */
+body{
+    box-sizing: border-box;
+    font-family: "Roboto",
+    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #000000;
+}
+
+/* Main Container DIV */
+.container{
+    background-color: #F4F6F7;
+}
+
+/* Full Header Content */
+.header{
+    background-color: #040918;
+    padding: 5px;
+}
+
+/* Techland Logo, Offers and Pc Builder */
+.headertitle{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Techland Logo Design */
+.headertitle .logoimg img{
+    width: 210px;
+    height: 35px;
+    text-align: center;
+}
+
+/* TechLand Logo on Left Side */
+.logoimg {
+    float: left;
+}
+
+/* Offers and PC Builder Button on Right Side*/
+.rightimage{
+    float: right;
+}
+
+/* Offers Button Design*/
+.btnoffer button{
+    cursor: pointer;
+    padding: 8px 5px;
+    background-color: #FF3403;
+    border: #FF3403;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* PC Builder Button Design */
+.btnpc button{
+    cursor: pointer;
+    padding: 8px 5px;
+    background-color: #0231BA;
+    border: #0231BA;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+/* <!-- Horizontal Rule --> */
+.header hr{
+   border: 1px solid #44484C;
+   margin: 5px 0px;
+}
+
+/*  <!-- This DIV is used for Float Element --> */
+.cleardiv{
+    clear: both;
+}
+
+/* Navbar Content */
+.navbar{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* MenuBar Content */
+.categorycontent{
+    width: 23%;
+} 
+
+/* Category Content Link */
+.categorycontent ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #1D2228;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/* Category Link Menubar Icon*/
+.bar {
+    font-size: 1rem;
+    color: #55585D;
+}
+
+/* Category Link Up Arrow*/
+.arrow {
+    font-size: 0.7rem;
+    padding-right: 10px;
+    color: #55585D;
+}
+
+/* SearchBar Content */
+.search {
+    width: 62%;    
+}
+
+/* SearchBar Content Input */
+.search input[type=text]{
+    float: left;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #999999;
+    border-right: none;
+}
+
+/* SearchBar Button */
+.search button{
+    width: 10%;
+    padding: 10px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 2px solid #999999;
+    border-left: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* SearchBar Button Hover */
+.search button:hover {
+    color: #FF648D;
+}
+
+/* User Section */
+.accountportion{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Shopping Cart Design */
+.accountportion .cart{
+    color: #FF5700;
+}
+
+/* User Section Link Hover Design */
+.accountportion > i:hover{
+    background-color: #2D344E;
+    padding: 5px;
+}
+
+/* Wishlist Design */
+.accountportion .wishlist{
+    color: #DC3545;
+}
+
+/* Compare Design */
+.accountportion .compare{
+    color: #1A66FF;
+}
+
+/* Account User Design */
+.accountportion .user{
+    color: #F1F2F2;
+}
+
+/* Middle Container */
+.midcontent{
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* Slide Show Section Design */
+.slideshowsection{
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+/* Sidebar Container Design */
+.menucontent{
+    width: 22.8%;
+    margin-top: -10px;
+    background-color: #1D2228;
+}
+
+/* Full Sidebar List Container */
+.menucontent ul{
+    position: relative;
+    list-style-type: none;
+    height: 465px;
+}
+
+/* Full Sidebar List Anchor Tag */
+.menucontent ul li a{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1.5px 5px;
+    transition: 0s;
+}
+
+/* Full Sidebar List Icon Design */
+.menucontent ul li a i {
+    position: absolute;
+    right: 10px;
+    font-size: 0.7rem;
+    color: #55585D;
+}
+
+/* Full Sidebar List Anchor Tag Hover */
+.menucontent ul li a:hover {
+    background-color: #2F3339;
+    padding: 2px;
+}
+
+/* Full Sidebar List Image Design */
+.menucontent ul li a img{
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+/* Laptop & Notebooks SubList Container */
+.menucontent ul ul{
+    position: absolute;
+    left: 245px;
+    top: 0;
+    width: 150px;
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px #55585D;
+    overflow-y: scroll;
+}
+
+/* Laptop & Notebooks SubList Anchor Tag */
+.menucontent ul ul li a{
+    color: #1D2228;
+    font-weight: 500;
+}
+
+/* Laptop & Notebooks SubList Anchor Tag Background Hover */
+.menucontent ul ul li a:hover {
+    background-color: #F2F2F2;
+}
+
+/* Show Display Laptop & Notebooks Sublist Content */
+.menucontent ul .dropdown:hover ul{
+    display: initial;
+}
+
+/* Slideshow Image Container*/
+.slideshowimage{
+    width: 77.2%;
+    margin: 5px 0;
+}
+
+/* Slideshow Image */
+.slideshowimage img{
+    width: 820px;
+    margin-top: 5px;
+}
+
+/* Best Deals Section  */
+.bestdeal{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* BestDeal Header */
+.bestdealhead{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Bestdeal Header Anchor Tag */
+.bestdealhead a{
+    text-decoration: none;
+    align-self: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Bestdeal Header Anchor Tag Icon */
+.bestdealhead a i{
+    color: #007BFF;
+}
+
+/* Bestdeal Header Horizontal Rule*/
+.bestdealhead:after {
+     content: "";
+     flex: 1 0;
+     border-bottom: 2px solid #D9D9D9;
+     margin: auto;
+}
+
+/* BestDeal Content */
+.bestdealcontent{
+    display: flex;
+    width: 100%;
+}
+
+/* BestDeal Content Image */
+.bestdealcontent img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* BestDeal Content all deals */
+.alldeals {
+    width: 16.67%;
+    background-color: #FFFFFF;
+    border: 2px solid #EEF0F2;
+    border-radius: 2px;
+    padding: 10px 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #121416;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* laptopdeals */
+.laptopdeals img{
+    background-color: #5EB9F3;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Desktopdeals */
+.desktopdeals img {
+    background-color: #F3DE04;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* bundledeals */
+.bundledeals img {
+    background-color: #6BE8E9;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* dunder999deals */
+.under999deals img {
+    background-color: #FE82C5;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* happyhour */
+.happyhour img {
+    background-color: #CD90FF;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* casingdeals */
+.casingdeals img {
+    background-color: #BBC7D3;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+/* Flash Deals Section  */
+.flashdeal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* FlashDeal Header */
+.flashdealhead {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Flashdeal Header Anchor Tag */
+.flashdealhead a {
+    text-decoration: none;
+    align-self: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Flashdeal Header Anchor Tag Icon */
+.flashdealhead a i {
+    color: #DC3545;
+}
+
+/* Flashdeal Header Horizontal Rule*/
+.flashdealhead:after {
+    content: "";
+    flex: 1 0;
+    border-bottom: 2px solid #D9D9D9;
+    margin: auto;
+}
+
+/* Flash Sale all Content */
+.flashdealcontent {
+    display: flex;
+    width: 100%;
+}
+
+/* Flash Sale Single ProductCard */
+.flashproductcard {
+    width: 20%;
+    background-color: #FFFFFF;
+    border: 2px solid #EEF0F2;
+    border-radius: 2px;
+    font-weight: 400;
+    color: #121416;
+}
+
+.flashproductcardhead{
+    height: 270px;
+}
+/* Flash Sale Single ProductCard Image Anchor Tag */
+.flashproductcard .flashproductcardimg {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+/* Flash Sale Single ProductCard Image  */
+.flashproductcard .flashproductcardimg img {
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+/*  Flash Sale Single ProductCard Paragraph Anchor Tag */
+.flashproductcard .flashproductcardp {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*  Flash Sale Single ProductCard Paragraph */
+.flashproductcard .flashproductcardp p {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+/*  Flash Sale Single ProductCard Footer */
+.flashproductcontent {
+    background-color: #DC3545;
+    text-align: center;
+    cursor: context-menu;
+    margin-top: 10px;
+}
+
+/*  Flash Sale Single ProductCard Footer Paragraph*/
+.flashproductcontent p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #3bd45e;
+}
+
+/*  Flash Sale Single ProductCard Footer Discount Price*/
+.flashproductcontent span {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flashproductcontent .nostock {
+    color: #99998E;
+}
+/*  Flash Sale Single ProductCard Footer Main Price*/
+.flashproductcontent span .distaka {
+    color: #414141;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+/* Important Product */
+.importantproduct {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* All Product List */
+.productlist{
+    width: 33.33%;
+    margin: 10px 0;
+}
+
+/* Latest Product, Best Seller, Feature Products Header */
+.productlisthead {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* Latest Product, Best Seller, Feature Products Header Header Anchor Tag */
+.productlisthead a {
+    text-decoration: none;
+    align-self: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* Latest Product Header Anchor Tag Icon */
+#latestproducticon a i {
+    color: #17A2B8;
+}
+
+/* Latest Product, Best Seller, Feature Products  Header Horizontal Rule*/
+.productlisthead:after {
+    content: "";
+    flex: 1 0;
+    border-bottom: 2px solid #D9D9D9;
+    margin: auto;
+}
+
+/* Latest Product, Best Seller, Feature Products card Image */
+.productlistcontent img {
+    width: 88px;
+    height: 88px;
+}
+
+/* Latest Product, Best Seller, Feature Products card content*/
+.importantallproduct {
+     height: 130px;
+     background-color: #FFFFFF;
+     border: 2px solid #EEF0F2;
+     border-radius: 2px;
+     font-weight: 400;
+     color: #121416;
+     padding: 10px 10px;
+}
+
+/* Latest Product, Best Seller, Feature Products card conter after hover */
+.importantallproduct:hover{
+    border: 2px solid #D9D9D9;
+}
+
+/* Latest Product, Best Seller, Feature Products card image position */
+.importantallproductimg {
+    float: left;
+    padding-right: 10px;
+}
+
+/* Latest Product, Best Seller, Feature Products card product name */
+.importantallproductcontent a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Latest Product, Best Seller, Feature Products card product name after hover */
+.importantallproductcontent a:hover {
+    color: #1a66ff;
+}
+
+/* Latest Product, Best Seller, Feature Products card product no review icon */
+.importantallproductcontent .review i{
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+/* Latest Product, Best Seller, Feature Products card product no review */
+.importantallproductcontent .review span {
+    font-size: 0.7rem;
+    color: #b3b3b3;
+}
+
+/*  Latest Product, Best Seller, Feature Products product discount price*/
+.importantallproductcontent .alltaka span {
+    color: #FF2A2A;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*  Latest Product, Best Seller, Feature Products product Main Price*/
+.importantallproductcontent span .maintaka {
+    color: #414141;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+/* Latest Product, Best Seller, Feature Products card product review icon */
+.importantallproductcontent .yellowreview i {
+    font-size: 0.8rem;
+    color: #FFD333;
+}
+
+/* Latest Product, Best Seller, Feature Products card product review */
+.importantallproductcontent .yellowreview span {
+    font-size: 0.7rem;
+    color: #b3b3b3;
+}
+
+/* Latest Product, Best Seller, Feature Products card product price no discount */
+.importantallproductcontent .blacktaka span {
+    color: #1D2228;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Latest Product Header Anchor Tag Icon */
+#bestsellericon a i {
+    color: #FFC107;
+}
+
+/* Featured Product Header Anchor Tag Icon */
+#featuredproducticon a i {
+    color: #17A2B8;
+}
+
+/* Whole Fotter Container */
+.footer{
+    background-color: #000000;
+}
+
+/* Whole Footer Content */
+.footercontent{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Footer Header */
+.footerhead p{
+    color: #CBD5E6;
+    text-align: center;
+}
+
+/* Footer Header Paragraph */
+#connect{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Tooltip Icon Container */
+.tooltipiconcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Tooltip content */
+.tooltip{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+/* tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    font-size: 0.9rem;
+    background-color: #1D2228;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+}
+
+/* tooltip text arrow */
+.tooltiptext::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #1D2228 transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 40%;
+    margin-left: 5%;
+}
+
+/* tooltip text show */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.facebook {
+    background-color: #3C5A99;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.messenger {
+    background-color: #006AFF;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.youtube {
+    background-color: #E52E2E;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.instagram {
+    background-color: #815DC7;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.twitter {
+    background-color: #00A2E8;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.pinterest {
+    background-color: #E60023;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin {
+    background-color: #0077B5;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    padding: 8px 13px;
+    color: #ffffff;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.footercontent{
+    width: 80%;
+}
+
+/* Branch Name and Address */
+.branch{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* Branch Address Card */
+.branchaddress{
+    width: 25%;
+    height: 140px;
+    border: 2px solid #1D2228;
+    padding: 5px 10px;
+}
+
+/* Branch Address Header */
+.branchaddress h5{
+    color: #cbd5e6;
+    font-size: 0.9rem;
+}
+
+/* Branch address content */
+.shop{
+    padding: 5px 0;
+}
+
+/* Branch address paragraph */
+.branchaddress p {
+    color: #cbd5e6;
+    font-size: 0.8rem;
+}
+
+/* Branch name  */
+.branchname h5{
+    float: left;
+}
+
+/* Map Icon */
+.branchname a {
+    float: right;
+    color: #cbd5e6;
+}
+
+.footerhr{
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #151A20;
+}
+
+.importantbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerbutton{
+    border: 1px solid #303860;
+    border-radius: 15px;
+    padding: 2px 5px;
+    background-color: #000000;
+    color: #cbd5e6;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.copyright{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.copyright p{
+    float: left;
+    color: #cbd5e6;
+    font-size: 0.9rem;
+}
+
+.paymentimg img{
+    float: right;
+    width: 355px;
+    height: 40px;
+    margin: 5px 0;
+}
